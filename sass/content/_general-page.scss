@@ -12,7 +12,9 @@
 	@include make-md-column(10);
 		padding-right: 0px;	
 }
-
+.container-fix {
+	padding-right: 0px;
+}
 //Inspiratie
 
 .intro-paragraph {
@@ -99,5 +101,41 @@ min-height: 16.42857px;
 	.modal-title {		
 		display: inline-block;
 		float: left;
+	}
+}
+.owl-carousel .owl-controls {	
+	.owl-dots {
+		@include clearfix;
+	}
+	.owl-dot {
+		float: left;
+		span {
+			display: inline-block;
+			width:10px;
+			height:10px;
+			background-color: #fff;
+			margin: 0px 5px;
+			border: 1px solid #000
+		}
+		&.active {
+			span {
+				background-color: $red;
+				border:1px solid #fff;
+			}
+		}
+	}
+}
+
+#home-slider {
+	.owl-controls {
+		width: 100%;
+		position: absolute;
+		top: 0px;
+
+	}
+	.owl-dots {
+		max-width: 1170px;
+		margin: 0 auto;
+		margin-top: 140px;
 	}
 }

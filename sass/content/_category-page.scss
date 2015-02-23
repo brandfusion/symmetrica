@@ -32,12 +32,44 @@
 		}
 	}
 }
-
-.filter-content {
+.filter-vertical {
+	.btn-accent, .btn-gray {
+		width: 100%;
+	}
+	.anuleaza {
+		margin-top: 10px;
+		font-weight: 300;
+		text-transform: none;
+	}
+	#applyFilters {
+		font-weight: 600;
+	}
+}
+.filter-wrapper {
+	h3 {
+		margin-top: 10px;
+		font-size: 16px;
+		color: $red;
+	}
 	ul {
 		list-style-type: none;
 	}
 	label {
 		font-weight: 400;
+		font-size: 12px;
+		line-height: 12px;
+		margin-bottom: 0px;
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
+	span {
+		font-weight: 600;
+	}
+	input[type="checkbox"] {
+		margin: 0px;
+		vertical-align: middle;
+	}
+	
 }

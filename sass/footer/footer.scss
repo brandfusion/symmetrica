@@ -1,0 +1,20 @@
+.footer {	
+	// @include make-row();
+	padding-top: 20px;
+	min-height: 120px;
+	background-color: #fff;
+	z-index: 3;
+	position: relative;
+	.copyright {
+		@include make-xs-column(8);
+		font-size: 12px;
+	}
+	.social {
+		@include make-xs-column(4);
+		text-align: right;
+		a {
+			font-size: 16px;
+			margin-left: 10px;
+		}
+	}
+}

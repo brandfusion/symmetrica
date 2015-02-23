@@ -1,0 +1,234 @@
+.product-box {	
+	position: relative;			    
+	/* height: 335px; */
+	margin: 10px 0 10px 0;
+	box-shadow: 10px 10px 20px -12px #000;
+	border: 1px solid #DDD;			
+	padding: 25px 15px;	
+	background-color: #fff;
+	text-align:center;
+	
+	// &:hover {
+	// 	background-color: #333;
+	// 	color: #fff;
+	// 	border: 1px solid #000;	
+	// 	a {color:#fff}
+	// 	.product-image {
+	//     	display: none;
+	//     }
+	//     .product-content {
+	//     	display: none;
+	//     }
+	//     .product-hover-content {
+	//     	display: block;
+	//     }
+	//     .product-extra {
+	//     	// display: none;
+	//     	color: #fff;
+	//     }
+	// }
+	&.group {
+		&:hover {
+			background-color: #fff;
+			color: #fff;
+			border: 1px solid #DDD;	
+			a {color:#000}
+			.product-image {
+		    	display: block;
+		    }
+		    .product-content {
+		    	display: block;
+		    }
+		    .product-hover-content {
+		    	display: none;
+		    }
+		    .product-extra {
+		    	// display: none;
+		    	color: #fff;
+		    }
+		    .product-view-link {
+		    	color:#fff;
+		    	&:hover {
+		    		color:#fff;
+		    	}
+		    }
+		}    
+	}
+	a {
+		color: #000;
+	}	
+	.product-image {
+		height: 150px;
+		overflow: hidden;
+		img {
+	    	max-width: 210px;
+	    	height: auto;
+	    	margin: 0 auto;
+	    }			    
+	}
+	.product-content {
+		height: 50px;
+	}
+	.product-hover-content {
+		height: 180px;
+		display: none;
+		p {
+			font-size: 14px;
+			font-weight:normal;
+			color:#fff;
+			strong {
+				font-family:'Roboto Condensed', sans-serif;
+				color:#999;
+			}
+		}
+	}
+	
+	h2 {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		min-height: 50px;
+		margin-top: 0px;											
+	}
+	a.product-view-link {
+		color: #fff;
+		width:200px;
+		text-align:center;
+		padding-left:30px;
+		margin:0 auto 5px auto;
+	}
+	p {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 20px;
+		margin: 0px;
+	}
+	.bottom-info {
+		float: left;
+	}
+	.points {
+		color: #D90000;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		float: left;
+		margin-right:2px;
+		a {
+			color: #D90000;
+			cursor:pointer;
+			float: left;
+			line-height:18px;
+			padding:0 0 5px 0;
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+	}
+	small {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 14px;
+		color: #AAA;
+		font-style: normal;
+		display: block;
+		margin-bottom: 30px;
+	}
+	
+
+    /*  custom checkbox */
+    input[type=checkbox]  {
+    	display:none;
+    }
+	label {
+		background-image: url(../img/checkbox_graph.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		font-weight: normal;
+		padding-left:16px;
+		font-size: 10px;
+		line-height: 12px;
+		margin-left:10px;
+		font-weight: normal;
+		&.compare_checked {
+			background-position: left bottom;
+		}	
+	}
+	
+	/* end custom checkbox */
+
+
+	input {
+		line-height: 13px;
+		margin: 0px 0px 0px 5px;
+		vertical-align: middle;
+	}
+}
+.list-view {
+	width:100%;
+	clear:both;
+	.product-box {
+		height: auto !important;
+		display:block;
+		float:left;
+		width:100%;	
+		padding:3px 15px;
+		margin:8px 0;
+		background-color: #fff;	
+		padding-bottom: 10px;
+		&:hover {
+		    border:1px solid #DDD;	
+		    color:#000000;	
+		    h2 {
+			    a {
+					color:#000000;				
+				}	
+			}			.product-image {
+				display:block;
+
+			}
+			.product-content {
+				display:block;							
+			}
+			.bottom-info {
+				color:#000000;
+			}
+		}		
+		.product-image {
+			float:left;
+			width:100px; 
+			height:auto;			
+			margin-right:20px; 		
+			border: none;
+			img {
+				max-height:70px;
+				margin:0 auto;
+				max-width: 100%;
+			}
+		}
+		h2 {
+			text-align:left;	
+			float:left;
+			width:80%;	
+			min-height:15px;
+			margin:10px 0 5px 0;				
+		}
+		.product-content {
+			text-align:left;
+			height:auto;
+			float:right;
+			width:45%;
+			text-align: right;
+		}
+		.bottom-info {
+			float:right;
+			margin-right:15px;
+		}
+		a {			
+			&.product-view-link {
+				width:auto;
+				float:right;
+				width:100px;
+				text-align:center;
+			}
+		}
+		
+	}	
+}

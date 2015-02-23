@@ -1,0 +1,43 @@
+.category-list {
+	@include make-row();
+}
+.category-box {
+	@include make-md-column(4);
+	position: relative;
+	height: 262px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.category-box-title {
+	position: absolute;
+	width: 100%;
+	max-width: 347px;
+	display: inline-block;
+	left: 20px;
+	top: 40%;
+	line-height: 60px;
+	background-color: #fff;
+	font-weight: 400;
+	margin: 0px;
+	text-align: center;
+	a {
+		width: 100%;
+		height: 100%;
+		font-size: 20px;
+		display: block;
+		@include animation(0.2s);		
+		&:hover {
+			background-color: $red;
+			color: #fff;
+		}
+	}
+}
+
+.filter-content {
+	ul {
+		list-style-type: none;
+	}
+	label {
+		font-weight: 400;
+	}
+}

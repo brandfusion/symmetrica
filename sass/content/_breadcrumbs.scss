@@ -1,0 +1,35 @@
+.breadcrumbs {
+	font-size: 12px;
+	line-height: 36px;
+	padding: 0px;	
+	margin: 0px;
+	color: #aaa;	
+	display: none;
+	
+	ul {
+		margin:0px; 
+		padding:0px;		
+	}
+	li {
+		display:inline-block;
+		list-style-type:none;
+		color: #000 ;		
+	}		
+	a {
+		color: #aaa;
+		text-decoration: none;
+		text-transform: capitalize;		
+		margin:0 5px;
+		display:inline-block;
+		&:hover {
+			text-decoration: none;
+			color: #000;
+		}	
+		&:active {
+			color: #000;
+		}	
+		&:first-child {
+			margin-left: 0px;
+		}
+	}
+}

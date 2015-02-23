@@ -1,0 +1,128 @@
+$header-color: #fff;
+$header-search-bg: #000;
+$header-search-border: #999999;
+$header-bg: url(../img/eurobike/header-bg.png);
+
+.header {
+	background: $header-bg repeat top left;	
+	display: block;
+	background-color: #039bcd;	
+	width: 100%;
+	color: $header-color;
+	border-bottom: 1px solid $header-search-border;
+
+	.nav > li > a:hover, .nav > li > a:focus {
+		background: transparent;
+	}
+
+
+// Logo
+	#logo {
+		text-align: center;
+		img{
+			max-width:100%;			
+			margin: 0 auto;
+		}
+		p {
+			font-size: 10px;
+			color: #BBBBBB;
+			font-weight: 700;
+			font-family:'Open Sans', sans-serif;
+		}
+	}
+	small {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+	}
+
+}
+
+
+//Cos
+.mobile-cos {
+	position: relative;
+	padding-top: 17px;
+	.fa-shopping-cart {
+		display: block;
+		font-size: 40px;
+		display: block;
+		float: right;
+		padding-top: 15px;
+	}
+	a {
+		display: block;
+		background-image: url("../img/mobile-cos.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+		width: 46px;
+		height: 40px;
+		position: relative;
+		margin: 0;
+		float:right;
+		&:hover {
+			text-decoration: none;
+		}
+		span {
+			display: block;
+			text-align: center;
+			width: 20px;
+			height: 20px;
+			margin-left: 8px;
+			padding-top: 3px;
+			font-size: 12px;
+		}
+	}	
+}
+
+
+// Search Bar
+.search-bar {
+	width: 100%;
+	.form {
+		width: 100%;
+	}
+	.navbar-form {
+		margin:0px;
+		padding: 0px;
+		.form-group {
+			margin: 0px;
+			background-color: #2F2830;
+			color: #fff;			
+			border-bottom: 1px solid #999999;
+			border-radius: 0px;
+			outline: none;
+			padding: 0px 5px 0 15px;
+			width: 100%;			
+			height: 32px;
+			font-size: 12px;
+			input[type="text"] {
+				width: 80%;	
+				border:none;	
+				background:none;				
+				margin-top:3px;
+				color:#a9a9a9;
+				vertical-align:middle;
+				padding: 0px 0px 0px 15px;
+				margin: 0px;
+				line-height: 32px;
+				&:focus {
+					border:none;
+					box-shadow:0 0 0 #fff; 
+					outline: none;
+				}
+			}
+			input[type="submit"] {
+				background:url(../img/eurobike/search.png) no-repeat center center;
+				border:none;
+				width:16px;
+				height:16px;
+				margin-top:7px;	
+				margin-right: 20px;					
+				vertical-align:middle;
+				float: right;				
+			}
+		}
+		
+	}
+}
+

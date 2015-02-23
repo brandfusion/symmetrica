@@ -1,0 +1,26 @@
+@mixin fill-button($bg-color, $color, $hover-bg-color, $hover-color) {
+	@include animation(0.2s);
+	display: inline-block;
+	background-color: $bg-color;
+	color: $color;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 30px;
+	padding: 0px 10px;
+	border: none;
+	text-align: center;
+	&:hover {
+		background-color: $hover-bg-color;
+		color: $hover-color;
+	}
+}
+
+@mixin brown {
+	background-color: #594100;
+	color: #001959
+}
+@mixin green {
+	background-color: #4f6900;
+	color: #6b0007;
+}

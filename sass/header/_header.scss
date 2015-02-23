@@ -1,0 +1,36 @@
+.header {
+	@include make-row();
+	background-color: #fff;
+	position: relative;
+	z-index: 3;
+}
+#logo {
+	@include make-md-column(3);
+	padding-top: 20px;
+	margin-bottom: 20px;
+	img {
+		max-width: 225px;
+	}	
+}
+.header-content {
+	@include make-md-column(9);
+}
+
+.scope-switcher {
+		@include make-md-column(4);
+		@include clearfix;
+		padding-right: 0px;
+		.btn-accent, .btn-gray {
+			width: 50%;
+			float: left;
+			font-weight: 400;
+			text-transform: none;
+			font-size: 14px;			
+		}
+}
+.wishlist {
+	width: 20%;
+	border-top: 1px solid #000;
+	padding: 4px 0px;
+	text-align: right;
+}

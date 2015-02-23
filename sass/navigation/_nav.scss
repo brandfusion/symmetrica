@@ -1,0 +1,62 @@
+// General
+.navigation {
+	list-style-type: none;
+	li {
+		float: left;			
+	}
+	a {
+		color: #666;
+		@include animation(0.1s);
+		&.inpath {
+			color: $red;
+		}
+	}
+}
+// Header
+.navigation-header {
+	margin-top: 10px;
+	li {
+		margin-left: 10px;
+	}
+}
+
+// Main Nav
+.navigation-main-wrapper {
+	@include make-row();
+	background-color: #fff;
+	z-index: 2;
+	position: relative;
+	margin-bottom: 10px;
+	.navigation-main-container {
+		@include make-md-column(8);
+
+	}
+}
+.navigation-main {
+	@include clearfix;				
+	border-top: 1px solid #000;
+	width: 80%;
+	float: left;
+	li {
+		margin-right: 40px;
+	}
+	a {
+		@include nav-level-1(#fff,#000,#fff,$red);
+	}
+	
+}
+.left-nav {		
+	.navigation {
+		li {
+			float: none;
+		}
+		a {
+			display: inline-block;
+			line-height: 25px;
+			color: #000;
+			&.inpath {
+				color: $red;
+			}
+		}
+	}
+}

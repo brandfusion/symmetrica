@@ -1,0 +1,34 @@
+@import "vendor/_bootstrap.scss";
+@import "vendor/_fontawesome.scss";
+@import "vendor/_owlcarousel.scss";
+@import "vendor/_animate.scss";
+@import "variables/_colors.scss";
+
+@import "mixins/_grid.scss";
+@import "mixins/_buttons.scss";
+@import "mixins/_nav.scss";
+@import "mixins/_general.scss";
+@import "content/_reset.scss";
+@import "content/homepage.scss";
+@import "header/header.scss";
+@import "navigation/nav.scss";
+@import "footer/footer.scss";
+
+@import "buttons/_buttons.scss";
+
+
+
+
+@import "content/_breadcrumbs.scss";
+@import "content/_product-page.scss";
+@import "content/_category-page.scss";
+@import "content/_authentication-page.scss";
+@import "content/_cart-page.scss";
+@import "content/_account-page.scss";
+@import "content/_checkout-page.scss";
+@import "content/_compare-page.scss";
+@import "content/_inspiratie-page.scss";
+@import "content/_general-page.scss";
+@import "_banners.scss";
+
+@import "product-box/_product-box.scss";

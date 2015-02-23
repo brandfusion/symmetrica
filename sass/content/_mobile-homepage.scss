@@ -1,0 +1,314 @@
+html, body {	
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	color: $linkcolor;
+	font-family: 'Open Sans', Verdana, sans-serif;
+	font-weight: 400;
+	background-color: #fff;
+	color: #000;
+	width:100%;
+	max-width:100%;
+	overflow: hidden;
+
+}
+img { display: block; }
+b, strong {
+	font-family: 'Roboto Condenesed', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+p {
+	padding:0;
+	margin:0;
+}
+a { 
+	text-decoration: none; 
+	color: $linkcolor; 
+}
+a:hover, a:focus {background-color: transparent; color: $linkcolor-hover;}  
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.mobile-wrapper {
+	-webkit-transition: all 300ms ease-in-out;
+	  -moz-transition: all 300ms ease-in-out;
+	  -o-transition: all 300ms ease-in-out;
+	  transition: all 300ms ease-in-out;
+	  z-index: 5;
+	  background-image: url("../img/eurobike/body-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: relative;
+	transform: translate(0px,0px);
+	background-color: #000;
+}
+.carousel-wrap {
+	// width: 480px;	
+	padding: 0px 15px;
+}
+.container {
+	max-width:440px;
+	
+}
+.clear {
+	float: none;
+	clear: both;
+}
+body.eurobike {
+	background-image: url("../img/eurobike/body-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #000;
+	position: relative;
+
+}
+.modal-dialog {
+	margin:20% auto auto;
+}
+
+.white-column {
+	// margin-right: -5px;
+	img {
+		width:100%;
+		height:auto;
+	}
+}
+#smallBoxes {
+	.spacing {
+		padding: 0px 5px;
+	}
+
+}
+#small_boxes {
+	img {
+		max-width: 100%;
+		margin-top: 10px;
+	}
+}
+#home-menu {
+	background: url('../img/eurobike/home-menu-bg.png') top left repeat-x;
+	height: 45px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-top: 20px;
+	ul {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		li {
+			float: left;
+			border-right: 1px solid #FFF;
+			width: 105px;
+			height: 45px;
+			a {
+				color: #FFf;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 10px;
+				font-weight: 700;
+				display: block;
+				width: 105px;
+				height: 45px;
+				text-align: center;
+				line-height: 45px;
+				text-decoration: none;
+				&:hover {
+					color: #D80000;
+				}
+			}
+		}
+	}
+	p {
+		color: #FFF;
+		font-family: 'Archivo Narrow';
+		font-size: 13px;
+		display: inline;
+		margin: 0px 0px 0px 45px;
+		line-height: 45px;
+		i {
+			font-weight: 700;
+			font-size: 25px;
+			vertical-align: middle;
+			margin-right: 5px;
+			font-style: normal;
+		}
+		strong {
+			color: #D80000;
+			font-weight: 700;
+		}
+	}
+}
+.carousel.slide {
+	.carousel-caption	{
+		color: #FFF;
+		font-family: 'Roboto Condensed', sans-serif;
+		text-shadow:0 1px 2px rgba(0, 0, 0, 0.6);
+		font-size: 18px;
+		letter-spacing: 3px;
+		text-align:right !important;
+		left:10%;
+		right:3%;
+		bottom:-10px;
+
+		span {
+			font-size: 30px;
+			font-weight: 700;
+		}			
+	}
+	.carousel-indicators {
+		bottom:0;
+		li{
+			background:#888888;
+			border:none;
+			width:12px;
+			height:12px;
+			&.active {
+				background:#fff;
+				border:none;				
+				margin:1px;
+			}
+		}
+	}
+	img {
+		width:100%;
+	}
+}
+.transparent-bg {
+	background-color: rgba(0,0,0,0.7);
+	padding:15px;
+	.gradient {
+		background:url("../img/eurobike/box-bg.jpg") repeat-x top left; 
+		min-height:330px;
+		padding:15px;		
+		}
+		h3 {
+			color: #FFFF4C;
+			font-family: 'Archivo Narrow', sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			padding:0;
+			margin:0 0px 10px 0px;
+		}
+		p {
+			color: #FFF;
+			font-size: 12px;
+			margin: 0px 0px 0px 0px;
+		}
+		.promotion-box {
+			font-family:'Roboto Condensed', sans-serif;
+			color: #000;
+			background: #ffffff;
+			padding:20px;
+			color:#000;
+			display:block;
+			margin-top:10px;
+			p {
+				font-size: 20px;
+				color: #000;
+				font-weight: bold;
+				margin-top: 105px;
+			}
+			small {
+				color: #888888;				
+				font-size: 16px;
+			}
+			img {
+				margin:-10px auto 10px auto;
+			}
+			h2 {
+				color:#000;
+				margin:0;
+				padding:0;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.product-view-link {				
+				width: 180px;						
+			}
+		input {
+			width: 100%;
+			height: 25px;
+			border:none;
+			&[type="submit"] {
+				width: auto;
+				float: right;
+				height: auto;
+				font-size:12px;
+				font-family:'Open Sans', sans-serif;
+				font-weight: 700;
+				margin-top: 15px;
+				padding: 5px 10px;
+			}		
+		}
+		label {
+			color: #fff;
+			font-size: 12px;
+			font-weight: normal;
+			margin-top: 10px;
+		}
+		
+	}
+}
+
+.promotion {
+	img	{
+		width: 100%;
+		height: auto;
+	}
+	background-color: #fff;
+	padding: 15px;
+
+	.promotion-header {
+		width: 94%;	
+		p {
+			padding-left: 15px;			
+			font-size: 12px;
+			color: #AAAAAA;			
+			margin: 5px 0px 0px 0px;
+		}	
+	}
+	h1 {
+		margin: 0px;
+		padding: 0px;
+		margin: 9px 0px 0px 0px;			
+		font-family: 'Roboto Condenesed', sans-serif;
+		font-weight: bold;
+		font-size: 18px;			
+		padding-left: 15px;
+		color:#000;
+		border-bottom: 1px solid #CCCCCC;
+	}
+	.promotion-badge {
+		width: 6%;
+		height: auto;		
+		img {
+			max-width: 100%;
+			height: auto;
+		}		
+	}
+}
+.header .row {
+	margin: 0px;
+}
+.produt-box  {
+	text-align:center;
+	.btn-3 {
+		width:200px;
+		margin:0 auto;
+	}
+}
+
+.static-content {
+	min-height: 700px;
+	background-color: #fff;
+	padding-top: 20px;
+}
+.active-side {
+	z-index: 2;
+}

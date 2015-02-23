@@ -1,0 +1,26 @@
+.btn-accent {
+	@include fill-button($red, #fff, #000, #fff);
+}
+.btn-gray {
+	@include fill-button(#666, #fff, #000, #fff);
+}
+.btn-add-to-list {
+	line-height: 30px;
+	text-align: right;
+	display: inline-block;
+	background-color: #fff;
+	background-image: url("../img/add-to-list.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: $red;
+	padding: 0px;
+	padding-left: 40px;
+	margin: 0px;
+	height: 30px;
+	outline: none;
+	border: none;
+	&:hover {
+		background-position: left bottom;
+		color: #000;
+	}
+}

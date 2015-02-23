@@ -1,0 +1,47 @@
+$footer-bg: #222222;
+$footer-color: #666;
+.footer {
+	display: block;
+	background-color: $footer-bg;
+	color: $footer-color;
+	width: 100%;
+	margin-top:20px;
+	font-size: 10px;
+	a {
+		color: $footer-color;
+		line-height: 20px;
+	}
+
+	h6 {
+		font-family: "Archivo Narrow", Verdana, sans-serif;	
+		font-weight: bold;	
+		font-size: 13px;
+		color: #fff;
+		letter-spacing: 1px;
+		margin: 15px 0px 20px 0;
+	}
+	p {
+		color: $footer-color;		
+		font-weight: 400;		
+		font-family: 'Open Sans',sans-serif;		
+		font-size: 10px;	
+		margin:0px 0 20px 0;
+			
+	}
+	.small-logo {
+		margin:50px 0 30px 0;
+		float:right;
+	}
+	.social {
+		padding-top: 15px;
+		a {
+			font-size: 16px;
+			color: #666666; 
+		}
+		a.fa:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+}

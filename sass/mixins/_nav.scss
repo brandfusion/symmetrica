@@ -1,0 +1,10 @@
+@mixin nav-level-1 ($bg-color, $color, $hover-bg-color, $hover-color) {
+  display: inline-block;
+  padding: 4px 0px; 
+  background-color: $bg-color;
+  color: $color;
+  &:hover {
+  	background-color: $hover-bg-color;
+  	color: $hover-color;
+  }
+}

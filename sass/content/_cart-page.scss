@@ -1,0 +1,61 @@
+.cos-item {
+	@include clearfix;
+	background-color: #dcdcdc;
+	margin-bottom: 20px;
+
+}
+.cos-image {
+	@include make-md-column(2);	
+	padding: 0px;
+	background-color: #fff;
+	max-height: 148px;
+	overflow: hidden;
+}
+.cos-details {
+	@include make-md-column(8);
+	padding: 10px;
+	h3 {
+		margin: 0px 0px 10px;
+		font-size: 16px;
+		font-weight: 600;
+	}
+}
+.cos-delete {
+	@include make-md-column(2);
+	padding: 10px;
+	text-align: right;
+	.fa {
+		margin-left: 10px;
+	}
+}
+.cos-headline {
+	padding-top: 10px;
+	border-top: 1px solid #000;
+}
+.cos-container {
+	max-width: 700px;
+	padding-left: 80px;
+	.control-label {
+		width: 200px;
+		float: left;
+		display: inline-block;
+		text-align: right;
+		padding-right: 10px;
+	}
+	.form-control {
+		width: 420px;
+		float: right;
+		display: inline-block;
+		border-radius: 0px;
+		outline: none;
+		border:1px solid #8a8a8a;
+		max-width: 420px;
+	}
+	input[type="submit"] {
+		@extend .btn-accent;
+		width: auto;
+	}
+}
+.form-horizontal {
+	padding: 0px 10px;
+}

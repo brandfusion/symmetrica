@@ -22,11 +22,11 @@
 
 // Main Nav
 .navigation-main-wrapper {
-	@include make-row();
+	@include make-md-column(12);
+	padding: 0px;
 	background-color: #fff;
 	z-index: 2;
 	position: relative;
-	margin-bottom: 10px;
 	.navigation-main-container {
 		@include make-md-column(8);
 
@@ -59,4 +59,28 @@
 			}
 		}
 	}
+}
+.fixed-header {
+	.header {
+		position: fixed;
+		z-index: 3;
+	}
+	
+	// top: 0px;
+	// right: 0px;
+	// left: 0px;
+	// width: 100%;
+
+	// .header {
+	// 	@extend .container;
+	// 	padding: 0px;
+
+	// }
+	#logo {	
+		margin-top: 5px;
+		margin-bottom: 5px;		
+		img {
+			max-width: 130px;		
+		}
+	}	
 }

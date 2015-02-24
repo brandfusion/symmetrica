@@ -25,23 +25,40 @@
 	@include make-md-column(8);
 }
 .item-hash-control {
-	max-width: 70px;
-	margin-right: 20px;
-	float: left;
-	max-height: 50px;
-	overflow: hidden;
-	margin-bottom: 10px;
+	// max-width: 70px;
+	// margin-right: 20px;
+	// float: left;
+	// max-height: 50px;
+	// overflow: hidden;
+	// margin-bottom: 10px;
 	a {
 		display: block;
 	}
 }
-.carousel-inspiratie-control {
+#inspiratie-main-content {
+	.owl-carousel .owl-item {
+		min-height: 900px;
+	}
+	.item {
+		min-height :900px;
+	}
+}
+#inspiratie-main-content .carousel-inspiratie-control {
 	@include clearfix;
+	width: 100%;
+	padding-right: 10px;
 	position: absolute;
 	top: 900px;
 	left: 10px;
 	z-index: 2;
+	.owl-carousel .owl-item {
+		min-height: 1px;
+	}
+	.item {
+		min-height :1px;
+	}
 }
+
 
 .detail-paragraph {
 	margin-bottom: 20px;

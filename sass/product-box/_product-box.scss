@@ -2,7 +2,8 @@
 	@include make-md-column(10);
 	padding: 0px;
 	.product {
-		@include make-md-column(2);	
+		@include make-md-column(2);
+		width: 20%;	
 	}
 	.product-header {
 		@include make-md-column(12);
@@ -20,7 +21,7 @@
 
 
 .product-box {
-	border-top: 1px solid $red;
+	// border-top: 1px solid $red;
 	min-height: 200px;
 	h2 {
 		font-size: 14px;

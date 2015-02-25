@@ -18,3 +18,17 @@
 		}
 	}
 }
+.footer .social {
+	a {
+		background-image: url("../img/desperiatfete.jpg");
+		background-repeat: no-repeat;
+		background-position: left top;
+		width: 70px;
+		height: 60px;
+		display: block;
+		float: right;
+	}
+	.fa {
+		display: none;
+	}
+}

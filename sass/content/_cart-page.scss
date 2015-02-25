@@ -2,6 +2,7 @@
 	@include clearfix;
 	background-color: #dcdcdc;
 	margin-bottom: 20px;
+	position: relative;
 
 }
 .cos-image {
@@ -58,4 +59,18 @@
 }
 .form-horizontal {
 	padding: 0px 10px;
+}
+#ordersubmit {
+	margin-left: -10px;
+}
+.cos-badges {
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	width: 100px;
+	.badge-item {
+		width: 40px;
+		float: left;
+		margin-right: 10px;
+	}
 }

@@ -66,7 +66,13 @@
 
 
 .detail-paragraph {
-	
+	.img-container {
+		text-align: right;
+		padding: 10px 10px 0px 0px;
+		img {
+			display: inline-block;
+		}
+	}
 	.media-left {
 		width: 20%;
 	}
@@ -183,4 +189,9 @@
 		float: right;
 		text-align: right;
 	}
+}
+.first-paragraph {
+	margin-top: 10px;
+	border-top: 1px solid #000;
+	padding-top: 10px;
 }

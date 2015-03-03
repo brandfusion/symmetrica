@@ -1,19 +1,28 @@
 .left-nav {
-	@include make-md-column(2);	
+	@include make-sm-column(2);	
 	padding-left: 0px;
 	min-height: 900px;
+	@media (max-width: 768px) {
+		min-height: 1px;
+	}
 }
 
 #main-content {
-		@include make-md-column(10);
+		@include make-sm-column(10);
 		padding-right: 0px;	
+		@media (max-width: 768px) {
+		padding: 0px;
+		}
 }
 .inspiratie-content {
-	@include make-md-column(10);
+	@include make-sm-column(10);
 		padding-right: 0px;	
 }
 .container-fix {
 	padding-right: 0px;
+	@media (max-width: 768px) {
+		padding-right: $gutter-width/2;
+	}
 }
 //Inspiratie
 
@@ -141,4 +150,24 @@ min-height: 16.42857px;
 }
 body {
 	padding-top: 127px;
+}
+a.contact {
+	display: block;
+	margin-top: 10px; 
+	display: block; 
+	position: absolute;
+	top: 285px;
+	@media (max-width: 768px) 
+	{
+		position: relative;
+	}
+}
+a.catalog {
+	display: block; 
+	position: absolute; 
+	top: 595px;
+	@media (max-width: 768px) 
+	{
+		position: relative;
+	}
 }

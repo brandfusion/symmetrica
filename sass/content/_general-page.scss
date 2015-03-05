@@ -1,12 +1,14 @@
 .left-nav {
 	@include make-sm-column(2);	
-	padding-left: 0px;
+	// padding-left: 0px;
 	min-height: 900px;
 	@media (max-width: 768px) {
 		min-height: 1px;
 	}
 }
-
+.row {
+	@include make-row();
+}
 #main-content {
 		@include make-sm-column(10);
 		padding-right: 0px;	
@@ -19,7 +21,7 @@
 		padding-right: 0px;	
 }
 .container-fix {
-	padding-right: 0px;
+	padding: 0px;
 	margin-top: 20px;
 	@media (max-width: 768px) {
 		padding-right: $gutter-width/2;
@@ -148,18 +150,24 @@ a.contact {
 	margin-top: 10px; 
 	display: block; 
 	position: absolute;
-	top: 285px;
+	top: 280px;
+	padding: 0px 10px;
+	left: 0px;
 	@media (max-width: 768px) 
 	{
 		position: relative;
+		display: none;
 	}
 }
 a.catalog {
 	display: block; 
 	position: absolute; 
-	top: 595px;
+	top: 570px;
+	padding: 0px 10px;
+	left: 0px;
 	@media (max-width: 768px) 
 	{
 		position: relative;
+		display: none;
 	}
 }

@@ -61,7 +61,8 @@
 	padding: 0px 10px;
 }
 #ordersubmit {
-	margin-left: -10px;
+	margin-left: 0px;
+	margin-right: -10px;
 }
 .cos-badges {
 	position: absolute;
@@ -77,8 +78,12 @@
 
 #ordersubmit {
 	margin-left: 0px;
-	margin-right: 10px;
+	margin-right: -10px;
 }
 #cart-page {
 	margin-top: 20px;
+}
+#ordersubmit1 {
+	margin-left: 0px;
+	margin-right: -10px;
 }

@@ -7,7 +7,7 @@
 }
 .product {
 	@include make-md-column(10);
-	padding: 0px;		
+	// padding: 0px;		
 }
 .product-info {
 	@include clearfix;	
@@ -41,9 +41,15 @@
 }
 .product-info-image {
 	@include make-md-column10(6);
-	// padding-right: 0px;	
+	padding-right: 0px;	
+	@media (max-width: 992px) {
+		padding-right: 10px;
+	}
 }
-.product-info-carousel {
+.product-info-carousel { 
+	a {
+		display: block;
+	}
 	.owl-stage-outer {
 		z-index: 2;
 	}
@@ -75,6 +81,9 @@
 	img {
 		width: 100%;
 	}	
+	a {
+		display: block;
+	}
 }
 .product-caracteristici {
 	@include make-md-column10(4);	
@@ -143,13 +152,23 @@ p.headline {
 .culori-list {		
 		@include make-md-column10(4);		
 		padding: 0px;
+		padding-left: 10px;
 		@media (max-width: 768px) {
-			@include make-row();
+			padding: 0px;
 		}
 		.color-item {
 			@include make-md-column10(5);
 			margin-bottom: 20px;
 			position: relative;
+			padding: 0px;
+			padding-right: 10px;
+			&:nth-child(2n) {
+				padding-right: 0px;
+				padding-left: 10px;
+				@media (max-width: 768px) {
+					padding: 0px;
+				}
+			}
 			span {
 				color: #fff;
 				position: absolute;
@@ -158,6 +177,14 @@ p.headline {
 				display: block;
 				font-weight: 600;
 			}
+			a {
+				height: 160px;
+				overflow: hidden;
+				display: block;
+				@media (max-width: 768px) {
+					height: auto;
+				}
+			}			
 		}
 
 	}
@@ -177,6 +204,18 @@ p.headline {
 .product-culori {
 	@include make-md-column10(10);
 	margin-bottom: 20px;	
+	padding: 0px;
+	.short-info {
+		padding-left: 10px;
+		@media (max-width: 768px) {
+			padding: 0px;
+		}
+	}
+	.row {
+		@media (max-width: 768px) {
+			margin: 0px;
+		}
+	}
 	
 }
 .product-montaj {
@@ -192,6 +231,9 @@ p.headline {
 	background-repeat: no-repeat;
 }
 .tabel {
+  @media (max-width: 768px) {
+  	display: none;
+  }
 	background-color: #dcdcdc;
 	table {
 		width: 100%;

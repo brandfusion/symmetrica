@@ -1,5 +1,6 @@
 .product-page {
 	@include make-row();	
+	margin-top: 20px;
 }
 .product-left-nav {
 	@include make-md-column(2);	
@@ -18,6 +19,9 @@
 
 	min-height: 504px;	
 	position: relative;
+	@media (max-width: 768px) {
+		min-height: 1px;
+	}
 	h1 {
 		font-weight: 400;
 		margin: 0px;
@@ -27,6 +31,9 @@
 
 .product-order {
 	@include clearfix;
+	@media (max-width: 768px) {
+		margin-bottom: 10px;
+	}
 	input[type="submit"] {
 		position: absolute;
 		bottom: 0px;
@@ -71,6 +78,7 @@
 }
 .product-caracteristici {
 	@include make-md-column10(4);	
+	@include clearfix;
 	margin-bottom: 20px;
 
 }
@@ -135,6 +143,9 @@ p.headline {
 .culori-list {		
 		@include make-md-column10(4);		
 		padding: 0px;
+		@media (max-width: 768px) {
+			@include make-row();
+		}
 		.color-item {
 			@include make-md-column10(5);
 			margin-bottom: 20px;
@@ -148,6 +159,7 @@ p.headline {
 				font-weight: 600;
 			}
 		}
+
 	}
 	
 	.culori-big-block {
@@ -197,6 +209,10 @@ p.headline {
 	th {
 		border-top: none;
 		font-weight: 600;
+		@media (max-width: 768px) {
+			font-weight: 400;
+			font-size: 10px;
+		}
 	}
 }
 .extra-detail {
@@ -207,10 +223,19 @@ p.headline {
 	@include clearfix;
 	position: absolute;
 	bottom: 85px;
+	@media (max-width: 768px) {
+		position: relative;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		bottom:auto;
+	}
 	.badge-item {
 		width: 56px;
 		float: left;
 		margin-right: 10px;
+		@media (max-width: 768px) {
+			width: 40px;
+		}
 	}
 }
 .left-nav {

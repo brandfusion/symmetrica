@@ -1,8 +1,11 @@
 .category-list {
 	@include make-row();
+	margin-top: 20px;
 }
 .category-box {
 	@include make-md-column(4);
+	@include make-sm-column(4);
+	@include make-xs-column(6);
 	position: relative;
 	height: 262px;
 	overflow: hidden;
@@ -13,10 +16,10 @@
 }
 .category-box-title {
 	position: absolute;
-	width: 100%;
-	max-width: 347px;
+	width: 80%;
+	// max-width: 347px;
 	display: inline-block;
-	left: 20px;
+	left: 10%;
 	top: 40%;
 	line-height: 60px;
 	background-color: #fff;
@@ -37,7 +40,7 @@
 }
 .filter-vertical {
 	.btn-accent, .btn-gray {
-		width: 100%;
+		width: 100%; 
 	}
 	.anuleaza {
 		margin-top: 10px;

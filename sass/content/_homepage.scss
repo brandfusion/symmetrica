@@ -2,6 +2,9 @@
 	margin-top: -127px;
 	position: relative;
 	overflow: hidden;
+	@media (max-width: 768px) {
+		margin-top: 0px;
+	}
 	.slide-content {
 		background-repeat: no-repeat;
 		background-position: center top;
@@ -57,6 +60,7 @@
 	.home-box-content {		
 		background-color: #fff;
 		height: 281px;
+		height: 260px;
 		position: relative;
 	}
 	h2 {
@@ -98,4 +102,33 @@
 	z-index: 5;
 	position: relative;
 	@include make-row();
+}
+#home-slider {	
+	 .owl-nav {
+		color: #fff;
+		padding: 0px 10%;
+		 .fa {
+		 	font-size: 20px;
+		 }
+	 }
+	 .owl-next {
+	 	float: right;
+	 }
+	 .owl-prev {
+	 	float: left;
+	 }
+}
+
+#home-slider {
+	.owl-controls {
+		width: 100%;
+		position: absolute;
+		top: 30%;
+
+	}
+	.owl-dots {
+		max-width: 1170px;
+		margin: 0 auto;
+		margin-top: 140px;
+	}
 }

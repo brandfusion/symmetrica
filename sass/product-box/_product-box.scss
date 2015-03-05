@@ -17,6 +17,7 @@
 }
 .content-list {
 	@include make-row();
+	margin-top: 20px;
 }
 
 

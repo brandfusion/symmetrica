@@ -6,6 +6,9 @@ body {
 	font-weight: 400;	
 	background-color: #fff;
 }
+.container {
+	max-width: 1080px;
+}
 img { display: block; }
 p {
 	padding:0;
@@ -180,8 +183,22 @@ $list-background-color-current: #eee !default;
 	li { 
 		@include make-md-column(2);
 		padding-left: 0px;
+		word-wrap: break-word;
+		font-size: 12px;
 	}
 	.group {
 		color: #626262;
 	}
 }
+.hidden-xs {
+  	display: block;
+  	@media (max-width: 768px) {	
+  		display: none;
+  	}
+  }
+// .visible-xs {
+// 	display: none;
+// 	@media (max-width: 768px) {
+// 		display: block;
+// 	}
+// }

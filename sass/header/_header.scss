@@ -1,31 +1,63 @@
 .header {
 	@include make-row();
+	@include clearfix;
 	background-color: #fff;
 	position: fixed;
 	z-index: 99;
 	top: 0px;
+	@media (max-width: 768px) {
+		position: relative;
+		width: 100%;	
+		padding: 0px 10px;
+		margin: 0px;
+		z-index: 1;
+		top: auto;		
+	}
 }
+
+
 #logo {
 	@include make-md-column(3);
 	@include animation(0.3s);
+	@include make-xs-column(6);
 	margin-top: 20px;
 	margin-bottom: 20px;
+	@media (max-width: 768px) {
+			margin: 10px 0px;
+			padding-left: 0px;
+		}
 	a {
 		display: block;
 	}
 	img {
 		max-width: 225px;
 		@include animation(0.2s);
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
 	}	
+}
+.mobile-nav-trigger {
+	@include make-xs-column(6);
+	text-align: right;
+	.fa {
+		margin-top: 25px;
+		cursor: pointer;
+	}
+}
+.shadow-header {
+	box-shadow: 0px 2px 3px #eee;
 }
 .header-content {
 	@include make-md-column(9);
+
 }
 
 .scope-switcher {
 		@include make-md-column(4);
 		@include clearfix;
 		padding-right: 0px;
+		padding-left: 18px;
 		.btn-accent, .btn-gray {
 			width: 50%;
 			float: left;
@@ -39,4 +71,18 @@
 	border-top: 1px solid #000;
 	padding: 4px 0px;
 	text-align: right;
+}
+
+
+
+.header-scope {
+	@media screen and (max-width: 768px) {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;		
+		}
 }

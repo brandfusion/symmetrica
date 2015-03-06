@@ -24,7 +24,7 @@
 	padding: 0px;
 	margin-top: 20px;
 	@media (max-width: 768px) {
-		padding-right: $gutter-width/2;
+		padding-right: 10px;
 	}
 }
 //Inspiratie
@@ -69,9 +69,11 @@ min-height: 16.42857px;
 #postform2 {
 	table {
 		margin: 0 auto;
+		margin: 0;
 	}
 	td {
 		font-weight: 600;
+		width: 100px;
 	}
 	input[name="Send"] {
 		@extend .btn-accent;
@@ -82,6 +84,7 @@ min-height: 16.42857px;
 		margin: 0px;
 		margin-right: 72px;
 		margin-top: 5px;
+		display: none;
 	}
 	input[type="text"] {
 		
@@ -104,6 +107,12 @@ min-height: 16.42857px;
 		outline: none;
 		border: 1px solid #8a8a8a;
 		margin-bottom: 10px;
+	}
+}
+.catalog-footer {
+	.btn-accent,.btn-gray {
+		width: 200px; 
+		margin-left: 100px;
 	}
 }
 #formularFisa {
@@ -170,4 +179,158 @@ a.catalog {
 		position: relative;
 		display: none;
 	}
+}
+
+
+.mobile-wrapper {
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	z-index: 5;
+	position: relative;
+	transform: translate(0px, 0px);
+	background-color: #fff;
+}
+
+
+// MOBILE
+
+
+
+.mobile-nav {
+	webkit-transition: all 300ms ease-in-out;
+	  -moz-transition: all 300ms ease-in-out;
+	  -o-transition: all 300ms ease-in-out;
+	  transition: all 300ms ease-in-out;
+	transform: translate(0px,0px);
+	-webkit-transform: translate(0%,0px);
+	position: absolute;
+	right: 0%;
+	top:0px;
+	width:80%;
+	height: 100%;
+	bottom: 0px;
+	background-color: #fafafa;	
+	overflow: hidden;	
+	ul {
+		list-style-type: none;
+	}
+	a {
+		text-decoration: none;
+		padding: 12px 10px;
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #eee;
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			background-color: $red;
+			.fa {
+				color: #fff;
+			}
+		}
+	}
+	.mobile-secondary-nav {		
+		margin-top: 40px;
+		border-top: 4px solid $red;
+		a {
+			color: #aaa;
+			font-size: 12px;
+		}
+	}
+
+	.fa {
+		float: right;
+		font-size: 14px;
+		padding-top: 4px;
+		color: $red;
+	}	
+	ul li > ul {	
+		  -webkit-transition: all 300ms ease-in-out;
+		  -moz-transition: all 300ms ease-in-out;
+		  -o-transition: all 300ms ease-in-out;
+		  transition: all 300ms ease-in-out;	
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 100%;
+		height: 100%;
+		background-color: #fafafa;
+		box-shadow: 0px 0px 3px #eee;
+		width: 80%;
+		li {
+			
+			// background-color: #0f0;			
+			a {
+				&:hover {
+					background:#6699c4;
+				}
+			}
+		}
+	}
+	ul li > ul li > ul {
+		width: 80%;
+		// background-color: #6d6d6d;
+		li {
+			a {
+				&:hover {
+					// background:#428bca;
+				}
+			}
+		}
+	}
+	ul li.fly-in ul.M1 {
+		transform: translate(-100%,0px);
+		-webkit-transform: translate(-100%,0px);
+	}
+	ul li.fly-in ul.M1 li.fly-in ul.M2 {
+		transform: translate(-100%,0px);
+		-webkit-transform: translate(-100%,0px);
+	}
+}
+li.fly-in {
+	z-index: 102;
+	background-color: #eee;
+}
+ul li > ul > li.fly-in {
+	background-color: #ddd;
+}
+
+a.fly-mask {
+	width:20%;
+	height: 100%;
+	display: none;
+	padding:0px;
+	margin: 0px;	
+	background-color: rgba(0,0,0,0);
+	-webkit-transition: all 300ms ease-in-out;
+	  -moz-transition: all 300ms ease-in-out;
+	  -o-transition: all 300ms ease-in-out;
+	  transition: all 300ms ease-in-out;
+		
+}
+a.fly-mask-active {	
+	-webkit-transition: all 300ms ease-in-out;
+	  -moz-transition: all 300ms ease-in-out;
+	  -o-transition: all 300ms ease-in-out;
+	  transition: all 300ms ease-in-out;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0);
+	&:hover {
+		
+		background-color: rgba(0,0,0,0);
+	}
+}
+
+.fly-in-nav {
+	transform: translate(100%,0px);
+	-webkit-transform: translate(100%,0px);	
+	// position: absolute;
+	// right:0px;
+	// top: 0px;
 }

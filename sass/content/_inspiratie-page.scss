@@ -55,6 +55,9 @@
 		.item {
 			min-height :1px;
 		}
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
 }
 #inspiratie-slider {

@@ -169,22 +169,32 @@ $list-background-color-current: #eee !default;
 
 .dynamicweb-map-info-window {}
 
-
+.map-title {
+	@include make-md-column(2);
+	border-top: 1px solid #000;
+	margin-top: 30px;
+	padding-top: 10px;
+}
 .map-list {
+	@include make-md-column(10);
 	margin-top: 20px;
 	
 	padding: 10px;
 	@include clearfix;
 	ul {
+		@include make-row();
 		@include clearfix;
 		border-top: 1px solid #000;
 		padding-top: 10px;
 	}
 	li { 
-		@include make-md-column(2);
+		// @include make-md-column(2);
+		float: left;
+		width: 25%;
 		padding-left: 0px;
 		word-wrap: break-word;
 		font-size: 12px;
+		min-height: 120px;
 	}
 	.group {
 		color: #626262;

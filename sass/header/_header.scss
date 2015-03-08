@@ -5,13 +5,14 @@
 	position: fixed;
 	z-index: 99;
 	top: 0px;
-	@media (max-width: 768px) {
+	@media (max-width: 992px) {
 		position: relative;
 		width: 100%;	
 		padding: 0px 10px;
 		margin: 0px;
 		z-index: 1;
-		top: auto;		
+		top: auto;
+		height: 58px;	
 	}
 }
 
@@ -22,23 +23,25 @@
 	@include make-xs-column(6);
 	margin-top: 20px;
 	margin-bottom: 20px;
-	@media (max-width: 768px) {
-			margin: 10px 0px;
-			padding-left: 0px;
-		}
+	@media (max-width: 992px) {
+		margin: 5px 0px;
+		padding-left: 0px;
+		width: 200px;
+	}
 	a {
 		display: block;
 	}
 	img {
 		max-width: 225px;
 		@include animation(0.2s);
-		@media (max-width: 768px) {
+		@media (max-width: 992px) {
 			max-width: 100%;
 		}
 	}	
 }
 .mobile-nav-trigger {
-	@include make-xs-column(6);
+	@include make-xs-column(3);
+	float: right;
 	text-align: right;
 	.fa {
 		margin-top: 25px;

@@ -9,6 +9,9 @@
 		@include clearfix;
 		width: 100%;
 		margin-bottom: 10px;
+		@media (max-width: 992px) {
+			margin: 0px;
+		}
 	}
 	p.headline {
 		padding-top: 10px;
@@ -46,24 +49,31 @@
 }
 #inspiratie-main-content {
 	/* .owl-carousel .owl-item {
-		min-height: 900px;
-	} */
+		min-height: 900px;	} */
+	
 	.item {
 		min-height :900px;
 	}
 	.carousel-inspiratie-control {
 		.item {
-			min-height :1px;
-		}
+			min-height: 1px;
+		}	
 		@media (max-width: 768px) {
 			display: none;
 		}
+
 	}
 }
 #inspiratie-slider {
 	position: relative;
 	@include make-sm-column(10);
 	padding-right: 0px;
+	@media (max-width: 992px) {
+			overflow: hidden;
+	}
+	@media (max-width: 768px) {
+			padding: 0px;
+	}
 	.carousel-inspiratie-control {
 		@include clearfix;
 		width: 100%;
@@ -73,6 +83,9 @@
 		top: 850px;
 		left: 10px;
 		z-index: 2;
+		@media (max-width: 1200px) {
+			top: 757px;
+		}
 		.owl-carousel .owl-item {
 			min-height: 1px;
 		}

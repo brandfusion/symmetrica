@@ -206,6 +206,12 @@ $list-background-color-current: #eee !default;
   		display: none;
   	}
   }
+.hidden-sm {
+	display: block;
+	@media (max-width: 992px) {
+		display: none;
+	}
+}  
 // .visible-xs {
 // 	display: none;
 // 	@media (max-width: 768px) {

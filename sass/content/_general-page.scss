@@ -20,11 +20,17 @@
 	@include make-sm-column(10);
 		padding-right: 0px;	
 }
+.wrapper {
+	padding-top: 127px;
+	@media (max-width: 992px) {
+		padding-top: 58px;
+	}
+}
 .container-fix {
 	padding: 0px;
 	margin-top: 20px;
 	@media (max-width: 768px) {
-		padding-right: 10px;
+		padding: 0px 10px;
 	}
 }
 //Inspiratie
@@ -42,6 +48,13 @@
 			color: #fff;
 			position: absolute;
 			left: 20px;
+			@media (max-width: 768px) {
+				position: relative;
+				left: auto;
+				top: auto;
+				color: #000;
+			}
+
 		}
 	}
 	img {
@@ -149,10 +162,7 @@ min-height: 16.42857px;
 
 
 body {
-	padding-top: 127px;
-	@media (max-width: 768px) {
-		padding-top: 0px;
-	}
+	
 }
 a.contact {
 	display: block;
@@ -162,6 +172,16 @@ a.contact {
 	top: 280px;
 	padding: 0px 10px;
 	left: 0px;
+	@media (max-width: 1200px) {
+		top: 250px;
+	}
+	@media (max-width: 992px) 
+	{
+		position: relative;
+		margin-bottom: 10px;
+		top: auto;
+		padding: 0px;
+	}
 	@media (max-width: 768px) 
 	{
 		position: relative;
@@ -174,6 +194,16 @@ a.catalog {
 	top: 570px;
 	padding: 0px 10px;
 	left: 0px;
+	@media (max-width: 1200px) {
+		top: 510px;
+	}
+	@media (max-width: 992px) 
+	{
+		position: relative;
+		margin-bottom: 10px;
+		top: auto;
+		padding: 0px;
+	}
 	@media (max-width: 768px) 
 	{
 		position: relative;
@@ -189,7 +219,7 @@ a.catalog {
 	transition: all 300ms ease-in-out;
 	z-index: 5;
 	position: relative;
-	transform: translate(0px, 0px);
+	// transform: translate(0px, 0px);
 	background-color: #fff;
 }
 

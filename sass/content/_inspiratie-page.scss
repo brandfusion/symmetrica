@@ -107,6 +107,13 @@
 	.media-left {
 		width: 20%;
 	}
+	.media-body {
+		h2 {
+			@media (max-width: 768px) {
+				font-size: 24px;
+			}
+		}
+	}
 	// margin-bottom: 20px;
 	// img {
 	// 	margin-bottom: 20px;
@@ -163,6 +170,9 @@
 }
 .post-item {
 	@include make-md-column(10);
+	@media (max-width: 768px) {
+		padding: 0px;
+	}
 	h1 {
 		margin: 0px;
 		margin-bottom: 10px;

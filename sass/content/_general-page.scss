@@ -4,6 +4,7 @@
 	min-height: 900px;
 	@media (max-width: 768px) {
 		min-height: 1px;
+		display: none;
 	}
 }
 .row {
@@ -31,6 +32,7 @@
 	margin-top: 20px;
 	@media (max-width: 768px) {
 		padding: 0px 10px;
+		margin-top: 10px;
 	}
 }
 //Inspiratie
@@ -42,7 +44,9 @@
 		margin: 0px;
 		margin-bottom: 10px;
 		font-weight: 300;
-		
+		@media (max-width: 768px) {
+			font-size: 30px;
+		}
 		&.absolute {
 			top: 10px;
 			color: #fff;
@@ -62,6 +66,9 @@
 	}
 	p {
 		font-size: 20px;
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
 	}
 }
 
@@ -363,4 +370,19 @@ a.fly-mask-active {
 	// position: absolute;
 	// right:0px;
 	// top: 0px;
+}
+
+.mobile-tab-navigation {
+	display: none;
+	margin-bottom: 10px;
+	select {
+		border: 1px solid $red;
+		line-height: 30px;
+		height: 30px;
+		padding: 5px;
+		outline: none;
+		background-color: #fff;
+		width: 100%;
+	 padding-left: 0px;
+	}
 }

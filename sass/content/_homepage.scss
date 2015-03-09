@@ -10,8 +10,15 @@
 		background-position: center top;
 		height: 990px;
 		padding-top:400px;
+		@media (max-width: 768px) {
+			padding: 0px;
+			height: auto;
+		}
 		.container {
 			position: relative;
+			@media (max-width: 768px) {
+				padding: 0px;
+			}
 		}
 		a {
 			position: absolute;
@@ -23,6 +30,13 @@
 			color:#fff;
 			font-weight: 300;
 			margin: 0px 0px 20px;
+			@include clearfix;
+			@media (max-width: 768px) {
+					padding: 0px 10px;
+					color: #000;
+					display: none;
+			}
+
 			&.headline-left {
 				text-align: left;
 			}
@@ -34,6 +48,9 @@
 				width: auto;
 				float: right;
 				padding-right: 10px;
+				@media (max-width: 768px) {
+					padding: 0px;
+				}
 			}
 		.slide-text {
 			@include make-row();
@@ -41,6 +58,17 @@
 			height: 150px;
 			padding: 10px 0px;
 			color: #fff;
+			@media (max-width: 768px) {
+					position: absolute;
+					bottom: 10px;
+					margin: 0px;
+					a.btn-accent {
+						position: absolute;
+						right: 10px;
+						top: 10px;
+						bottom: auto;
+					}				
+			}
 			h3 {
 				@include make-md-column(8);
 				margin: 0px 0px 10px;
@@ -50,18 +78,35 @@
 			p {
 				@include make-md-column(8);
 				font-size: 18px;
-				font-weight: 300;
+				font-weight: 300;		
+				@media (max-width: 768px) {
+					font-size: 14px;
+				}		
 			}
 		}
 	}	
 }
 .home-box {
-	@include make-md-column(4);
+	@include make-sm-column(4);	
+	margin-bottom: 10px;
 	.home-box-content {		
 		background-color: #fff;
 		height: 281px;
 		height: 260px;
 		position: relative;
+		overflow: hidden;
+		@media (max-width: 1200px) {
+			height: 225px;
+		}
+		@media (max-width: 992px) {
+			height: 165px;
+		}
+		@media (max-width: 768px) {
+			height: auto;
+			img {
+				width: 100%;
+			}
+		}
 	}
 	h2 {
 		padding: 10px;
@@ -93,7 +138,11 @@
 		left: 10px;
 	}
 	&.narrow {
-		@include make-md-column(2);
+		@include make-sm-column(2);
+		@include make-xs-column(6);
+		// @media (max-width: 768px) {
+		// 	display: none;
+		// }
 	}
 }
 
@@ -102,6 +151,9 @@
 	z-index: 5;
 	position: relative;
 	@include make-row();
+	@media (max-width: 768px) {
+		margin-top: 10px;
+	}
 }
 #home-slider {	
 	 .owl-nav {
@@ -124,6 +176,9 @@
 		width: 100%;
 		position: absolute;
 		top: 30%;
+		@media (max-width: 768px) {
+			display: none;
+		}
 
 	}
 	.owl-dots {

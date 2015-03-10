@@ -187,3 +187,10 @@
 		margin-top: 140px;
 	}
 }
+.context-switch {
+	@extend .btn-accent;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;	
+}

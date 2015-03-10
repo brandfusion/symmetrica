@@ -1,12 +1,4 @@
-.left-nav {
-	@include make-sm-column(2);	
-	// padding-left: 0px;
-	min-height: 900px;
-	@media (max-width: 768px) {
-		min-height: 1px;
-		display: none;
-	}
-}
+
 .row {
 	@include make-row();
 }
@@ -385,4 +377,26 @@ a.fly-mask-active {
 		width: 100%;
 	 padding-left: 0px;
 	}
+}
+.mobile-tab-navigation-product {
+	display: none;
+	margin-bottom: 10px;
+	select {
+		border: 1px solid $red;
+		line-height: 30px;
+		height: 30px;
+		padding: 5px;
+		outline: none;
+		background-color: #fff;
+		width: 100%;
+	 padding-left: 0px;
+	}
+}
+.mobile-nav .mobile-secondary-nav a.switch-context {
+	@extend .btn-accent;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 40px;
+	font-size: 14px;
 }

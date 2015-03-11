@@ -130,7 +130,7 @@ p.headline {
 	.product-dimensiuni-item {
 		@include make-sm-column10(2);
 		p {
-			@include make-row();
+			// @include make-row();
 		}
 	}
 	.product-dimensiuni-single-item {		
@@ -139,7 +139,7 @@ p.headline {
 		}		
 	}
 	input[type="submit"] {
-		margin-left: -10px;
+		margin-left: 0px;
 		margin-top: 10px;
 	}
 }

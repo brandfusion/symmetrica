@@ -3,18 +3,36 @@
 	background-color: #dcdcdc;
 	margin-bottom: 20px;
 	position: relative;
+	@media (max-width: 992px) {
+		background-color: #fff;
+		border-bottom: 1px solid #eee;
+		&:last-child {
+			border: none;
+		}
+	}
 
 }
 .cos-image {
-	@include make-md-column(2);	
+	@include make-sm-column(2);	
 	padding: 0px;
 	background-color: #fff;
 	max-height: 148px;
 	overflow: hidden;
+	@media (max-width:768px) {
+		display: none;
+	}
 }
 .cos-details {
 	@include make-md-column(8);
+	@include make-sm-column(7);
 	padding: 10px;
+	
+	p {
+		@media (max-width:768px) {
+			display: none;
+		}
+	}
+	
 	h3 {
 		margin: 0px 0px 10px;
 		font-size: 16px;
@@ -23,10 +41,27 @@
 }
 .cos-delete {
 	@include make-md-column(2);
+	@include make-sm-column(3);
 	padding: 10px;
 	text-align: right;
+	@media (max-width:768px) {
+		position: absolute;
+		top: 0px;
+		right: 10px;
+		padding-top: 7px;
+	}
 	.fa {
 		margin-left: 10px;
+		@media (max-width:768px) {
+			color: red;
+		}
+	}
+	a {
+		span {
+			@media (max-width:768px) {
+				display: none;
+			}
+		}
 	}
 }
 .cos-headline {
@@ -42,6 +77,10 @@
 		display: inline-block;
 		text-align: right;
 		padding-right: 10px;
+		@media (max-width:768px) {
+			text-align: left;
+			width: auto;
+		}
 	}
 	.form-control {
 		width: 420px;
@@ -51,6 +90,9 @@
 		outline: none;
 		border:1px solid #8a8a8a;
 		max-width: 420px;
+		@media (max-width:768px) {
+			width: 100%;
+		}
 	}
 	input[type="submit"] {
 		@extend .btn-accent;
@@ -63,12 +105,18 @@
 #ordersubmit {
 	margin-left: 0px;
 	margin-right: -10px;
+	@media (max-width:768px) {
+		margin-right: 0px; 
+	}
 }
 .cos-badges {
 	position: absolute;
 	right: 0px;
 	top: 30px;
 	width: 100px;
+	@media (max-width:768px) {
+		display: none;
+	}
 	.badge-item {
 		width: 40px;
 		float: left;
@@ -76,14 +124,27 @@
 	}
 }
 
-#ordersubmit {
-	margin-left: 0px;
-	margin-right: -10px;
-}
+// #ordersubmit {
+// 	margin-left: 0px;
+// 	margin-right: -10px;
+// 	@media (max-width:768px) {
+// 		margin-right: 0px;
+// 	}
+// }
 #cart-page {
 	margin-top: 20px;
 }
 #ordersubmit1 {
 	margin-left: 0px;
 	margin-right: -10px;
+	@media (max-width:768px) {
+		margin-right: 0px;
+	}
+}
+.inner-image {
+	display: none;
+	@media (max-width:768px) {
+		display: block;
+		@include make-xs-column(6);
+	}
 }

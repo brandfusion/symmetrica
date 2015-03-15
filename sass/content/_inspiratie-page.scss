@@ -83,6 +83,28 @@
 		top: 850px;
 		left: 10px;
 		z-index: 2;
+		.owl-controls {
+			position: absolute;
+			top: 20px;
+			width: 100%;
+			@include clearfix;
+			.fa {
+				font-size: 10px;
+				&:hover {
+					color: $red;
+				}
+			}
+			.owl-prev {
+				margin-left: -15px;
+				
+				float: left;
+			}
+			.owl-next {
+				float: right;
+				margin-right: -5px;
+
+			}
+		}
 		@media (max-width: 1200px) {
 			top: 757px;
 		}

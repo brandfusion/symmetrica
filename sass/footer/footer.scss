@@ -6,11 +6,37 @@
 	z-index: 3;
 	position: relative;
 	.copyright {
-		@include make-xs-column(8);
+		@include make-sm-column(8);
+		@include make-xs-column(10);
 		font-size: 12px;
+		p, a {
+			display: inline;
+		}
+		ul {
+			list-style-type: none;
+			li {
+				float: left;
+				&:after {
+						content: "|";
+						margin-left: 5px;
+						margin-right: 5px;
+					}
+				&:last-child:after {
+					content: "";
+				}
+				@media (max-width: 768px) {
+					float: none;
+					width: 100%;
+					&:after {
+						content: "";
+					}
+				}	
+			}
+		}
 	}
 	.social {
-		@include make-xs-column(4);
+		@include make-xs-column(2);
+		@include make-sm-column(4);
 		text-align: right;
 		a {
 			font-size: 16px;

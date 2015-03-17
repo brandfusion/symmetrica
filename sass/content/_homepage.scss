@@ -67,6 +67,7 @@
 						right: 10px;
 						top: 10px;
 						bottom: auto;
+						font-size: 10px;
 					}				
 			}
 			h3 {
@@ -136,6 +137,9 @@
 		position: absolute;
 		bottom: 10px;
 		left: 10px;
+		@media (max-width: 768px) {
+			font-size: 10px;
+		}
 	}
 	&.narrow {
 		@include make-sm-column(2);

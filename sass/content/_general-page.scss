@@ -78,28 +78,32 @@ border: none;
 min-height: 16.42857px;
 }
 
-#postform2 {
+#postform2, #postform3 {
+	border-top: 1px solid #333;
+	padding-top: 10px;
 	table {
-		margin: 0 auto;
-		margin: 0;
+		margin: 0 auto;	
+		max-width: 500px;
+		width: 100%;
 	}
 	td {
 		font-weight: 600;
-		width: 100px;
+		// width: 100px;
 	}
-	input[name="Send"] {
+	input[name="Send"],input[type="button"] {
 		@extend .btn-accent;
 		margin: 0 auto;
 		display: block;
 		margin-top: 10px;
 		padding: 0px 20px;
 		margin: 0px;
-		margin-right: 72px;
+		margin-right: 0px;
 		margin-top: 5px;
-		display: none;
+		width: 200px;		
 	}
 	input[type="text"] {
-		
+		max-width: 420px;
+		width: 100%;
 		height: 34px;
 		padding: 6px 12px;
 		font-size: 14px;
@@ -119,6 +123,16 @@ min-height: 16.42857px;
 		outline: none;
 		border: 1px solid #8a8a8a;
 		margin-bottom: 10px;
+	}
+	textarea {
+		max-width: 420px;
+		width: 100%;
+		border: 1px solid #8a8a8a;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		-webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+		-o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+		transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;	
 	}
 }
 .catalog-footer {
@@ -234,9 +248,9 @@ a.catalog {
 	  transition: all 300ms ease-in-out;
 	transform: translate(0px,0px);
 	-webkit-transform: translate(0%,0px);
-	position: absolute;
+	position: fixed;
 	right: 0%;
-	top:0px;
+	top:58px;
 	width:80%;
 	height: 100%;
 	bottom: 0px;
@@ -403,4 +417,13 @@ a.fly-mask-active {
 .mobile-cart {
 	margin-right: 10px;
 	color: $red;
+}
+#postform2 {
+	display: none;
+	margin-top: 10px;
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+}
+.catalog-content {
+	margin-bottom: 10px;
 }

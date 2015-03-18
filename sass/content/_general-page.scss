@@ -234,6 +234,7 @@ a.catalog {
 	position: relative;
 	// transform: translate(0px, 0px);
 	background-color: #fff;
+	min-height: 850px;
 }
 
 
@@ -426,4 +427,7 @@ a.fly-mask-active {
 }
 .catalog-content {
 	margin-bottom: 10px;
+}
+.filter-error {
+	padding-top: 12px;
 }

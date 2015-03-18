@@ -248,6 +248,7 @@ p.headline {
 		}
 	}
 }
+
 .tabel-header {
 	border-top: 1px solid #000;
 	padding-top: 10px;
@@ -255,16 +256,19 @@ p.headline {
 	background-image: url("../img/arrow-down.jpg");
 	background-position: left 5px;
 	background-repeat: no-repeat;
+	margin-bottom: 20px;
 	p {
 		cursor: pointer;
 		display: block;
 		span {
 			float: right;
 			font-weight: 400;	
-			font-size: 12px;		
+			font-size: 12px;	
+			text-transform: none;	
 			.fa {
 				font-family: "FontAwesome";
 				color: #cc202c;
+				color: #fff;
 				content: "\f196";
 				vertical-align: middle;
 				margin-left: 5px;
@@ -273,8 +277,21 @@ p.headline {
 		}
 	}
 }
+// .tabel-header-2 {
+// 	background: #fff;
+// 	padding-left: 0px;
+// 	border: none;
+// 	padding-top: 0px;
+// 	.btn-accent {
+// 		display: inline-block;
+// 		margin-bottom: 10px;
+// 		.fa {
+// 			margin-left: 5px;
+// 		}
+// 	}
+// }
 .tabel {
-	display: none;
+	display: none;	
   @media (max-width: 768px) {
   	display: none;
   }

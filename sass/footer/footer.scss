@@ -41,6 +41,12 @@
 		a {
 			font-size: 16px;
 			margin-left: 10px; 
+			@media (max-width: 768px) {
+				font-size: 20px;			
+			  min-width: 28px;
+			  display: block;
+			  margin: 0px;			  
+			}
 		}
 	}
 }

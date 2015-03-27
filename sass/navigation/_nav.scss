@@ -79,27 +79,27 @@
 	}
 }
 
-.fixed-header {
-	.header {
-		position: fixed;
-		z-index: 99;
-	}
+// .fixed-header {
+// 	// .header {
+// 	// 	position: fixed;
+// 	// 	z-index: 99;
+// 	// }
 	
-	// top: 0px;
-	// right: 0px;
-	// left: 0px;
-	// width: 100%;
+// 	// top: 0px;
+// 	// right: 0px;
+// 	// left: 0px;
+// 	// width: 100%;
 
-	// .header {
-	// 	@extend .container;
-	// 	padding: 0px;
+// 	// .header {
+// 	// 	@extend .container;
+// 	// 	padding: 0px;
 
-	// }
-	#logo {	
-		margin-top: 5px;
-		margin-bottom: 5px;		
-		img {
-			max-width: 130px;		
-		}
-	}	
-}
+// 	// }
+// 	#logo {	
+// 		margin-top: 5px;
+// 		margin-bottom: 5px;		
+// 		img {
+// 			max-width: 130px;		
+// 		}
+// 	}	
+// }

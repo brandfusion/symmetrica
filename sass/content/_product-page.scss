@@ -153,9 +153,12 @@ p.headline {
 .culori-list {		
 		@include make-sm-column10(4);		
 		padding: 0px;
-		padding-left: 10px;
+		padding-left: 10px;	
 		@media (max-width: 768px) {
 			padding: 0px;
+		}
+		@media (max-width: 992px) {
+			padding-left: 10px;
 		}
 		.color-item {
 			@include make-sm-column10(5);
@@ -166,11 +169,18 @@ p.headline {
 			@media (max-width: 768px) {
 					padding: 0px;
 				}
+			@media (max-width: 992px) {
+				padding-right: 20px;
+				font-size: 12px;
+			}	
 			&:nth-child(2n) {
 				padding-right: 0px;
 				padding-left: 10px;
 				@media (max-width: 768px) {
 					padding: 0px;
+				}
+				@media (max-width: 992px) {
+					padding-right: 20px;
 				}
 			}
 			span {
@@ -180,6 +190,10 @@ p.headline {
 				top: 10px;
 				display: block;
 				font-weight: 600;
+				@media (max-width: 992px) {
+					max-width: 70%;
+					left: 10px;
+				}
 			}
 			a {
 				height: 160px;
@@ -221,6 +235,9 @@ p.headline {
 		@media (max-width: 768px) {
 			padding: 0px;
 		}
+		@media (max-width: 992px) {
+			padding-right: 10px;
+		}
 	}
 	.row {
 		@media (max-width: 768px) {
@@ -236,10 +253,16 @@ p.headline {
 	@media (max-width: 768px) {
 			padding: 0px;
 		}
+		@media (max-width: 992px) {
+			padding-right: 10px;
+		}
 	.short-info {
 		padding-left: 10px;
 		@media (max-width: 768px) {
 			padding: 0px;
+		}
+		@media (max-width: 992px) {
+			padding-right: 10px;
 		}
 	}
 	.row {

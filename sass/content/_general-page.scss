@@ -7,6 +7,7 @@
 		padding-right: 0px;	
 		@media (max-width: 768px) {
 		padding: 0px;
+		width: 100%;
 		}
 }
 .inspiratie-content {
@@ -85,6 +86,9 @@ min-height: 16.42857px;
 		margin: 0 auto;	
 		max-width: 500px;
 		width: 100%;
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
 	}
 	td {
 		font-weight: 600;
@@ -99,7 +103,8 @@ min-height: 16.42857px;
 		margin: 0px;
 		margin-right: 0px;
 		margin-top: 5px;
-		width: 200px;		
+		width: 200px;
+		border-radius: 0px;		
 	}
 	input[type="text"] {
 		max-width: 420px;
@@ -123,6 +128,9 @@ min-height: 16.42857px;
 		outline: none;
 		border: 1px solid #8a8a8a;
 		margin-bottom: 10px;
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
 	}
 	textarea {
 		max-width: 420px;
@@ -133,6 +141,9 @@ min-height: 16.42857px;
 		-webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
 		-o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
 		transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;	
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
 	}
 }
 .catalog-footer {
@@ -185,6 +196,7 @@ a.contact {
 	top: 280px;
 	padding: 0px 10px;
 	left: 0px;
+	width: 100%;
 	@media (max-width: 1200px) {
 		top: 250px;
 	}
@@ -207,6 +219,7 @@ a.catalog {
 	top: 570px;
 	padding: 0px 10px;
 	left: 0px;
+	width: 100%;
 	@media (max-width: 1200px) {
 		top: 510px;
 	}
@@ -430,4 +443,9 @@ a.fly-mask-active {
 }
 .filter-error {
 	padding-top: 12px;
+}
+.view-catalog {
+	@media (max-width: 992px) {
+		display: none;
+	}
 }

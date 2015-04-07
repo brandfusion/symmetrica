@@ -75,13 +75,20 @@
 						top: 10px;
 						bottom: auto;
 						font-size: 10px;
-					}				
+					}	
+			@media (max-width: 480px) {
+					width: 100%;
+					height: auto;
+				}					
 			}
 			h3 {
 				@include make-md-column(8);
 				margin: 0px 0px 10px;
 				font-size: 30px;
 				font-weight: 300;
+				@media (max-width: 480px) {
+					margin-bottom: 0px;
+				}
 			}
 			p {
 				@include make-md-column(8);
@@ -89,7 +96,10 @@
 				font-weight: 300;		
 				@media (max-width: 768px) {
 					font-size: 14px;
-				}		
+				}
+				@media (max-width: 480px) {
+					display: none;
+				}
 			}
 		}
 	}	

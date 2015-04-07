@@ -35,6 +35,9 @@
 }
 .inspiratie-product-description {
 	@include make-md-column(8);
+	@media (max-width: 768px) {
+		padding: 0px;
+	}
 }
 .item-hash-control {
 	// max-width: 70px;
@@ -68,8 +71,11 @@
 	}
 	.item {
 		min-height :900px;
+		@media (max-width: 768px) {
+			min-height: 1px;
+		}
 	}
-	.carousel-inspiratie-control {
+	.carousel-inspiratie-control {		
 		.item {
 			min-height: 1px;
 		}	
@@ -89,6 +95,7 @@
 	}
 	@media (max-width: 768px) {
 			padding: 0px;
+			width: 100%;
 	}
 	.carousel-inspiratie-control {
 		@include clearfix;
@@ -102,6 +109,7 @@
 		.owl-controls {
 			position: absolute;
 			top: 20px;
+			height: 0px;
 			width: 100%;
 			@include clearfix;
 			.fa {

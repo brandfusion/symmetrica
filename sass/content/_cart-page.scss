@@ -1,11 +1,11 @@
 .cos-item {
-	@include clearfix;
-	background-color: #dcdcdc;
+	@include clearfix;	
 	margin-bottom: 20px;
 	position: relative;
 	@media (max-width: 992px) {
 		background-color: #fff;
 		border-bottom: 1px solid #eee;
+		padding-bottom: 20px;
 		&:last-child {
 			border: none;
 		}
@@ -22,9 +22,22 @@
 		display: none;
 	}
 }
+.cos-item-content {
+	@include make-md-column(10);
+	@include make-sm-column(10);
+	@include make-xs-column(12);
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+	position: relative;
+	background-color: #dcdcdc;
+	@media (max-width: 992px) {
+		background-color: #fff;
+	} 
+}
 .cos-details {
-	@include make-md-column(8);
-	@include make-sm-column(7);
+	@include make-sm-column(10);
+	// @include make-sm-column(7);
 	padding: 10px;
 	
 	p {
@@ -40,10 +53,16 @@
 	}
 }
 .cos-delete {
-	@include make-md-column(2);
-	@include make-sm-column(3);
+	// @include make-md-column(2);
+	// @include make-sm-column(3);
 	padding: 10px;
 	text-align: right;
+	@media (max-width: 992px) {
+		  width: 200px;
+		  position: absolute;
+		  top: 0px;
+		  right: 0px;
+	}
 	@media (max-width:768px) {
 		position: absolute;
 		top: 0px;
@@ -52,12 +71,14 @@
 	}
 	.fa {
 		margin-left: 10px;
+		display: inline-block;
 		@media (max-width:768px) {
 			color: red;
 		}
 	}
 	a {
 		span {
+			display: inline-block;
 			@media (max-width:768px) {
 				display: none;
 			}

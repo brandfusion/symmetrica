@@ -449,3 +449,50 @@ a.fly-mask-active {
 		display: none;
 	}
 }
+
+.flex-direction-nav {
+	position: absolute;
+}
+.flex-direction-nav a {
+	opacity: 1;
+	width: 15px;
+	height: 15px;
+	&:before {
+		font-size: 10px;
+	}
+}
+
+.product-info-image-main {
+	.flex-direction-nav {
+	  position: absolute;
+	  top: 25px;
+	  right: 25px;
+	  a:before {
+	  	color: #fff;
+	  }
+	}
+	.flex-direction-nav .flex-prev {
+		left: -10px;
+	}
+	.flex-direction-nav .flex-next {
+		left: 0px;
+	}
+}
+.product-info-carousel {
+	position: relative;
+	.flex-direction-nav {
+	  position: absolute;
+	  top: 50%;
+	  left: 0px;
+	  right: 0px;
+	  a {
+	  	margin-top: -7px;
+	  }
+	}
+	.flex-direction-nav .flex-prev {
+		left: -15px;
+	}
+	.flex-direction-nav .flex-next {
+		right: -15px;
+	}
+}

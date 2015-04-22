@@ -496,3 +496,71 @@ a.fly-mask-active {
 		right: -15px;
 	}
 }
+.map-list li {
+	transition: all 0.2s ease-in;	
+}
+.show-rep {
+	opacity: 1;	
+}
+.hide-rep {
+	opacity: 0;	
+}
+.reprezentanti-list {
+	.map-list {
+		transition:all 0.2s ease-in;
+	}
+	.filter-bar {
+		padding: 10px 5px 0;
+		border-top: 1px solid #000;
+	}
+	ul {
+		border-top: none;
+	}
+	.filter-bar {
+		p {
+			display: inline-block;
+			margin-right: 10px;
+			line-height: 24px;
+		  font-weight: 700;
+		  font-size: 12px;
+		}
+		select {
+			margin-right: 10px;
+			line-height: 24px;
+			height: 28px;
+  		vertical-align: top;
+  		line-height: 28px;
+		  display: inline-block;		  
+		 	outline: none;
+		 	border: 1px solid #ddd; 
+		 	font-size: 12px; 
+		}
+		button {
+			font-size: 12px;
+			height: 28px;
+			outline: none;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			line-height: 22px;
+			transition: all 0.2s ease-in;
+			border: 1px solid #666;
+			background-color: #666;
+			color: #fff;
+			display: inline-block;
+			&:hover {
+				background-color: #000;
+				border-color: #000;
+			}
+		}
+	}
+}
+.distribuitori-list {
+	li {
+		width: 50%;
+		min-height: 80px;
+		float: left;
+		@media (min-width: $screen-sm-min) {
+			width: 25%;
+		}
+	}
+}	

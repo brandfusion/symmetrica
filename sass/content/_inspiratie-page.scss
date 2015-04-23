@@ -1,5 +1,6 @@
+
 .inspiratie-list {
-	@include make-md-column10(6);
+	@include make-md-column10(4);
 	float: right;
 	@media (max-width: 992px) {
 		padding: 0px;
@@ -35,6 +36,9 @@
 }
 .inspiratie-product-description {
 	@include make-md-column(8);
+	max-height: 10em;
+  overflow: auto;
+  font-size: 12px;
 	@media (max-width: 768px) {
 		padding: 0px;
 	}
@@ -70,7 +74,7 @@
 		}
 	}
 	.item {
-		min-height :900px;
+		// min-height :900px;
 		@media (max-width: 768px) {
 			min-height: 1px;
 		}
@@ -96,6 +100,9 @@
 	@media (max-width: 768px) {
 			padding: 0px;
 			width: 100%;
+	}
+	.item {
+		background-color: #fff;
 	}
 	.carousel-inspiratie-control {
 		@include clearfix;
@@ -289,4 +296,37 @@
 	margin-top: 10px;
 	border-top: 1px solid #000;
 	padding-top: 10px;
+}
+.inspiratie-main-carousel {
+	position: relative;
+	border: none;	
+	.big-image-container {
+		@include make-sm-column10(6);
+		padding-right: 0px;	
+		@media (max-width: 992px) {
+			padding-right: 10px;
+		}
+	}
+	.flex-direction-nav {
+	  position: absolute;
+	  top: 25px;
+	  left: 25px;
+	  a:before {
+	  	color: #fff;
+	  }
+	}
+	.flex-direction-nav .flex-prev {
+		left: -10px;
+	}
+	.flex-direction-nav .flex-next {
+		left: 0px;
+	}
+	&.flexslider:hover .flex-direction-nav .flex-prev {
+		left: -10px;
+	}
+}
+#inspiratie-main-content {
+	.intro-paragraph {
+		display: none;
+	}
 }

@@ -193,10 +193,12 @@ a.contact {
 	margin-top: 10px; 
 	display: block; 
 	position: absolute;
-	top: 280px;
+	top: 196px;
 	padding: 0px 10px;
 	left: 0px;
 	width: 100%;
+	overflow: hidden;
+	height: 90px;
 	@media (max-width: 1200px) {
 		top: 250px;
 	}
@@ -216,7 +218,7 @@ a.contact {
 a.catalog {
 	display: block; 
 	position: absolute; 
-	top: 570px;
+	top: 315px;
 	padding: 0px 10px;
 	left: 0px;
 	width: 100%;

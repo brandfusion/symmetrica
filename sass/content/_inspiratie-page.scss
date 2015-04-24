@@ -2,6 +2,7 @@
 .inspiratie-list {
 	@include make-md-column10(4);
 	float: right;
+	background-color: #fff;
 	@media (max-width: 992px) {
 		padding: 0px;
 	}
@@ -15,15 +16,15 @@
 		}
 	}
 	p.headline {
-		padding-top: 10px;
-		border-top: 1px solid #000;
+		// padding-top: 10px;
+		// border-top: 1px solid #000;
 	}
 	p strong {
 		font-weight: 600;
 	}
 }
 .big-image-container {
-	margin-bottom: 110px;
+	// margin-bottom: 110px;
 	@media (max-width: 992px) {
 		margin-bottom: 20px;
 	}
@@ -88,6 +89,27 @@
 			
 		}
 
+	}
+}
+.inspiratie-main-carousel-control {
+	padding: 10px;
+  margin: 0px;
+  border: 0px;
+	.item {
+		padding-right: 15px;
+	}
+	.flex-direction-nav {
+		position: absolute;
+	  top: 50px;
+	  left: 0px;
+	  right: 0px;
+	  width: 100%;
+	  .flex-prev {
+	  	left: -6px;
+	  }
+	  .flex-next {
+	  	right: -6px;
+	  }
 	}
 }
 #inspiratie-slider {
@@ -300,6 +322,7 @@
 .inspiratie-main-carousel {
 	position: relative;
 	border: none;	
+	margin-bottom: 10px;
 	.big-image-container {
 		@include make-sm-column10(6);
 		padding-right: 0px;	
@@ -317,13 +340,26 @@
 	}
 	.flex-direction-nav .flex-prev {
 		left: -10px;
+		background-color: rgba(255,255,255,0.7);
+		width: 15px;
+		height: 15px;
+		text-align: center;		
+		&:before {
+			display: block;
+			color: #000;
+		}
 	}
 	.flex-direction-nav .flex-next {
-		left: 0px;
-	}
-	&.flexslider:hover .flex-direction-nav .flex-prev {
-		left: -10px;
-	}
+		width: 15px;
+		height: 15px;
+		left: 5px;
+		background-color: rgba(255,255,255,0.7);
+		text-align: center;		
+		&:before {
+			display: block;
+			color: #000;
+		}
+	}	
 }
 #inspiratie-main-content {
 	.intro-paragraph {

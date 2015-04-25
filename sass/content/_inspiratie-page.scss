@@ -1,13 +1,13 @@
 
 .inspiratie-list {
-	@include make-md-column10(4);
-	float: right;
+	padding: 0px;
 	background-color: #fff;
-	@media (max-width: 992px) {
-		padding: 0px;
+	@media (min-width: 768px) {
+		@include make-xs-column10(4);
+		float: right;
+		padding-right: 0px;		
 	}
-	.inspiratie-item-list {
-		@include make-row();
+	.inspiratie-item-list {	
 		@include clearfix;
 		width: 100%;
 		margin-bottom: 10px;
@@ -30,7 +30,9 @@
 	}
 }
 .inspiratie-product-image {
-	@include make-md-column(4);
+	@media (min-width: 768px) {
+		@include make-xs-column(4);
+	}	
 	img {
 		max-width: 180px;
 	}
@@ -95,6 +97,10 @@
 	padding: 10px;
   margin: 0px;
   border: 0px;
+  display: none;
+  @media (min-width: 768px) {
+  	display: block;
+  }
 	.item {
 		padding-right: 15px;
 	}
@@ -114,14 +120,11 @@
 }
 #inspiratie-slider {
 	position: relative;
-	@include make-sm-column(10);
-	padding-right: 0px;
-	@media (max-width: 992px) {
-			overflow: hidden;
-	}
-	@media (max-width: 768px) {
-			padding: 0px;
-			width: 100%;
+	padding: 0px;
+	width: 100%;
+	@media (min-width: 992px) {
+		@include make-sm-column(10);
+		padding: 0px;
 	}
 	.item {
 		background-color: #fff;
@@ -157,10 +160,7 @@
 				margin-right: -5px;
 
 			}
-		}
-		@media (max-width: 1200px) {
-			top: 757px;
-		}
+		}		
 		.owl-carousel .owl-item {
 			min-height: 1px;
 		}
@@ -323,17 +323,25 @@
 	position: relative;
 	border: none;	
 	margin-bottom: 10px;
+
 	.big-image-container {
 		@include make-sm-column10(6);
-		padding-right: 0px;	
-		@media (max-width: 992px) {
+		padding: 0px;			
+		@media (min-width: 768px) {
 			padding-right: 10px;
+			padding-left: 0px;
+		}
+		@media (min-width: 992px) {
+			padding-left: 10px;
 		}
 	}
 	.flex-direction-nav {
 	  position: absolute;
-	  top: 25px;
-	  left: 25px;
+	  top: 25px;	 
+	  left: 15px; 
+	  @media (min-width: 992px) {
+	  	left: 25px;
+	  }
 	  a:before {
 	  	color: #fff;
 	  }

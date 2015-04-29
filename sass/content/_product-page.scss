@@ -285,18 +285,34 @@ p.headline {
 		cursor: pointer;
 		display: block;
 		span {
+			width: 120px;
+			transition: all 0.2s ease-in;
 			float: right;
 			font-weight: 400;	
 			font-size: 12px;	
 			text-transform: none;	
-			.fa {
-				font-family: "FontAwesome";
-				color: #cc202c;
-				color: #fff;
-				content: "\f196";
+			&.after {
+				font-family: "FontAwesome";				
+				color: #fff;				
 				vertical-align: middle;
 				margin-left: 5px;
 				font-size: 14px;
+			}
+			&.closed:after {
+				font-family: "FontAwesome";	
+				content: "\f196";
+				margin-left: 5px;
+				font-size: 14px;
+				color: #fff;				
+				vertical-align: middle;
+			}	
+			&.opened:after{
+				font-family: "FontAwesome";	
+				content: "\f147";
+				margin-left: 5px;
+				font-size: 14px;
+				color: #fff;				
+				vertical-align: middle;
 			}
 		}
 	}

@@ -451,20 +451,72 @@ a.fly-mask-active {
 }
 
 .product-info-image-main {
+	// .flex-direction-nav {
+	//   position: absolute;
+	//   top: 25px;
+	//   right: 25px;
+	//   a:before {
+	//   	color: #fff;
+	//   }
+	// }
+	// .flex-direction-nav .flex-prev {
+	// 	left: -10px;
+	// }
+	// .flex-direction-nav .flex-next {
+	// 	left: 0px;
+	// }
+
+
+
 	.flex-direction-nav {
 	  position: absolute;
-	  top: 25px;
-	  right: 25px;
+	  top: 25px;	 
+	  left: 15px; 
+	  @media (min-width: 992px) {
+	  	left: 25px;
+	  }
 	  a:before {
 	  	color: #fff;
 	  }
 	}
 	.flex-direction-nav .flex-prev {
 		left: -10px;
+		background-color: rgba(255,255,255,0.7);
+		width: 15px;
+		height: 15px;
+		text-align: center;		
+		&:before {
+			display: block;
+			color: #000;
+		}
 	}
 	.flex-direction-nav .flex-next {
-		left: 0px;
+		width: 15px;
+		height: 15px;
+		left: 5px;
+		background-color: rgba(255,255,255,0.7);
+		text-align: center;		
+		&:before {
+			display: block;
+			color: #000;
+		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 }
 .product-info-carousel {
 	position: relative;
@@ -557,4 +609,59 @@ a.fly-mask-active {
 }
 #main-content {
 	min-height: 900px;
+}
+
+#nosidebar-main-content {
+	padding: 0px 10px;
+}
+.file-list {
+	margin-bottom: 20px;
+	tr {
+		border-bottom: 1px solid #ddd;
+		margin-bottom: 1em;
+		height: 2em;
+		&:hover {
+			background-color: #ddd;
+		}
+	}
+	a:hover {
+		color: $red; 
+	}
+	.file-download {
+		color: $red;
+		font-weight: 700;
+		// &:before {
+		// 	font-family: "FontAwesome";
+		// 	content: "\f019";
+		// 	margin-right: 0.5em;
+		// }	
+	}
+	.file-view {
+		color: #000;
+		font-weight: 700;
+		&:hover  {
+			color: #000;
+		}
+		// &:before {
+		// 	font-family: "FontAwesome";
+		// 	content: "\f06e";
+		// 	margin-right: 0.5em;
+		// }	
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
+.fisa-headline {
+	  border-bottom: 1px solid $red;
+	  margin-bottom: 10px;
+	  p {
+	  	font-weight: 300;
+		  font-size: 16px;		
+		  color: #cc202c;
+		  background-color: $red;
+		  display: inline-block;
+		  padding: 0px 11px;
+		  color: #fff;
+	  }
 }

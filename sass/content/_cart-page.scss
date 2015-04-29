@@ -170,3 +170,9 @@
 		@include make-xs-column(6);
 	}
 }
+.orderfunctions {
+	color: #000;
+	&:hover {
+		color: red;
+	}
+}

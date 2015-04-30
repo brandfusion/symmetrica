@@ -190,38 +190,42 @@ body {
 }
 a.contact {	
 	margin-top: 10px; 	
-	padding: 0px 10px;	
+	// padding: 0px 10px;	
+	padding: 0px;
 	width: 100%;
 	overflow: hidden;	
 	display: none;
 	position: relative;
 	@media (min-width: 992px) {
-		position: absolute;
-		top: 180px;
-		left: 0px;
+		// position: absolute;
+		// top: 180px;
+		// left: 0px;
 		display: block;		
 	}
 	@media (min-width: 1200px) {
-		position: absolute;		
-		top: auto;		
-		top: 190px;
-		left: 0px;
+		// position: absolute;		
+		// top: auto;		
+		// top: 190px;
+		// left: 0px;
 	}
 }
 a.catalog {
 	display: block; 
-	position: absolute; 
-	top: 310px;
-	padding: 0px 10px;
-	left: 0px;
+	// position: absolute; 
+	// top: 310px;
+	// padding: 0px 10px;
+	// left: 0px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 0px;
 	width: 100%;
 	display: none;	
 	@media (min-width: 992px) {		
-		top: 288px;		
+		// top: 288px;		
 		display: block;
 	}	
 	@media (min-width: 1200px) {
-		top: 310px;
+		// top: 310px;
 	}
 }
 

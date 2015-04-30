@@ -1,11 +1,19 @@
 
 .inspiratie-list {
 	padding: 0px;
-	background-color: #fff;
+	background-color: #fff;	
+	overflow: auto;
 	@media (min-width: 768px) {
 		@include make-xs-column10(4);
 		float: right;
-		padding-right: 0px;		
+		padding-right: 0px;  	
+  	max-height: 405px;
+	}	
+	@media (min-width: 992px) {
+		max-height: 429px;
+	}
+	@media (min-width: 1200px) {
+		max-height: 485px;
 	}
 	.inspiratie-item-list {	
 		@include clearfix;

@@ -656,16 +656,41 @@ a.fly-mask-active {
 		text-decoration: underline;
 	}
 }
+.tab-panel {
+	 margin-bottom: 10px;
+	 border-bottom: 1px solid $red;
+}
 .fisa-headline {
-	  border-bottom: 1px solid $red;
-	  margin-bottom: 10px;
-	  p {
-	  	font-weight: 300;
-		  font-size: 16px;		
-		  color: #cc202c;
-		  background-color: $red;
-		  display: inline-block;
-		  padding: 0px 11px;
-		  color: #fff;
+	  // border-bottom: 1px solid $red;
+	 
+	  display: inline-block;
+	  a {
+
+		 font-weight: 300;
+	  font-size: 16px;		
+	  color: #cc202c;	
+	  background-color: #CACACA; 
+	  padding: 0px 11px;
+	  color: #fff;
 	  }
+	  &.active {
+	  	a {
+	  		background-color: $red;
+	  	}
+	  }
+	 
+}
+.call-center {	
+  border: 1px solid $red; 
+  padding: 0.3em;
+  position: absolute;
+  left: 60px;
+  top: 35px;
+  background-color: $red;
+  color: #ffffff;
+  font-size: 0.8em;
+  .fa  {
+  	margin-right: 0.2em;
+  }
+ 
 }

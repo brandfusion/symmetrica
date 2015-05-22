@@ -222,13 +222,14 @@
 .post-list {
 	h3 {
 		display: inline-block;
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 		margin-top: 0px;
 	}
 	.post-date {
 		color: #aaa;
-		display: inline;
+		display: block;
 		font-size: 10px;
+		margin-bottom: 10px;
 	}
 	.post-short {
 		margin-bottom: 10px;
@@ -395,5 +396,10 @@
 	}
 	p {
 		margin-bottom: 1em;
+	}
+}
+.intro-paragraph {
+	ul {
+		padding-left: 30px;
 	}
 }

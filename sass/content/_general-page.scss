@@ -79,7 +79,8 @@ border: none;
 min-height: 16.42857px;
 }
 
-#postform2, #postform3 {
+
+#postform1, #postform2, #postform3,  {
 	border-top: 1px solid #333;
 	padding-top: 10px;
 	table {
@@ -145,6 +146,10 @@ min-height: 16.42857px;
 			max-width: 100%;
 		}
 	}
+}
+#postform1, #postform3 {
+	border-top: none;
+	padding-top: 0px;
 }
 .catalog-footer {
 	.btn-accent,.btn-gray {

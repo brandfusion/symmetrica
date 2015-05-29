@@ -9,7 +9,7 @@
 		color: $red;
 	}
 	.copyright {
-		@include make-sm-column(8);
+		@include make-sm-column(10);
 		@include make-xs-column(10);
 		font-size: 12px;
 		p, a {
@@ -39,7 +39,7 @@
 	}
 	.social {
 		@include make-xs-column(2);
-		@include make-sm-column(4);
+		@include make-sm-column(2);
 		text-align: right;
 		a {
 			font-size: 16px;

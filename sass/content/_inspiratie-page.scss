@@ -274,7 +274,38 @@
 		color: #aaa;
 	}
 }
-
+.post-item  {
+	@media (max-width: 991px){
+		padding: 0px;
+	}
+	.post-content {
+		h1 {
+			font-size: 2em;
+		  font-weight: 400;
+		  color: #CC202C;
+		  text-transform: uppercase;
+		  margin-bottom: 0px;
+		  color: $red;
+		}			
+	}
+	.post-date {
+		margin-left: 0px;
+		display: block;
+		.fa {
+			margin-right: 0.2em;
+		}
+	}
+	p {
+		margin-bottom: 0.5em;
+	}
+	ul {
+		padding-left: 1.2em;
+		margin-bottom: 0.5em;
+	}
+	.post-item-image {
+		margin-bottom: 1.5em;
+	}
+}
 .left-nav {	
 	.product-navigation {
 		li {

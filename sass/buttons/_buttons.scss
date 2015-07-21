@@ -24,3 +24,13 @@
 		color: #000;
 	}
 }
+.btn-empty {
+	box-shadow: none;
+	border: none;
+	display: block;
+	background-color: transparent;
+	background-image: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
